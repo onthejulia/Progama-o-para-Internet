@@ -1,0 +1,34 @@
+Passo 01
+#Iniciar#
+ls
+Passo 02
+#Abrir Pasta e documento#
+cd nomeLocal
+cd nomeArquivo
+Passo 03:
+#Iniciar o Git#
+git init
+Passo 04:
+#Verificar#
+ls -a
+git status
+Passo 05:
+#Adicionar o Arquivo#
+git add nomeArquivo
+Passo 06:
+#Primeiro Commit#
+git commit -m "Primeiro Commit"
+Passo 07:
+#Exibir lista#
+git config --list
+Passo 08
+#Inserir o endereço do GitHub#
+git config --global user.name "nome"
+git config --global user.email "email"
+Passo 09
+#Adicionar o caminho do repositório#
+git remote add origin endereço
+Passo 10
+#Subir o arquivo#
+git branch -M main
+git push -u origin main
