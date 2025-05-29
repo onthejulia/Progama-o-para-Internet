@@ -1,0 +1,61 @@
+Para subir do Terminal Git
+Passo 01:
+#Abrir o terminal Git#
+Ir no local do acesso ao arquivo que você deseja subir
+Ex:
+Se o arquivo estiver na pasta Documentos
+Clicar no nome Documentos, clicar no botão direito do mouse e selecionar a opção "Open Git Bash Here"
+
+Passo 02:
+#Verificar se a pasta aberta esta correta e o arquivo que você deseja subir esta ok#
+ls
+
+Passo 03:
+#Iniciar o Git e adcionar user, email e url#
+git init
+git config --global user.name"nome_usuario_github"
+git config --global user.email"email_do_github"
+git remote add origin sua_url
+
+Passo 04:
+#Nomear seu comando#
+git commit -m "Nome do que você está fazendo"
+
+Passo 05:
+#Adicionando o arquivo desejado#
+git add nome_arquivo_comsuaextensão
+
+Passo 06:
+#Nomeado a branch atual para main#
+git branch -M main
+
+Passo 07:
+#git push -u origin main
+
+Passo 08:
+Recarragar o seu repositório e verificar se o arquivo subio
+
+#OBS#
+Se depois do comando push ocorrer erro colocar o comando:
+git pull origin main --rebase
+e repetir o git push -u origin main
+
+#Para subir um arquivo quando já se tem o repositório salvo#
+Como saber se esse o repositório já está anexado.
+"Your branch is up to date with 'origin/main'."
+Se essa mensagem aparecer depois da tentativa do comando do commit ou do comando git remote add origin + url, 
+sua origem já está definida.
+Siga com os passo a seguir.
+
+Passo 01:
+#Verifique se os dados estão correto e se a url corresponde ao seu repositório#
+git remote -v
+
+Passo 02:
+#Adicione o arquivo#
+git add nome_arquivo_extensão
+
+Passo 03:
+#Subir o arquivo#
+git push origin main
+
