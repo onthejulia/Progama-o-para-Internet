@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Como subir um arquivo do terminal Windowns</h1>
+    <h1>Passo 01:</h1>
+    <h3>Ao abrir o prompt de comando inicie abrindo a pasta onde o arquivo está localizado</h3>
+    <h4>cd c:\Users\seu nome de usuário\nome da pasta</h4>
+    <h4>Em caso de dúvidas em relação ao nome da pasta use o comando "dir"</h4>
+    <h1>Passo 02:</h1>
+    <h3>Inicialize o git</h3>
+    <h4>git init</h4>
+    <h1>Passo 03:</h1>
+    <h3>Configure passando suas informações de usuário, email e caminho do repositório</h3>
+    <h4>git config --global user.name"seu nome de usuário no github"</h4>
+    <h4>git config --global user.email"seu email do github"</h4>
+    <h4>git remote add origin + url do seu repositório</h4>
+    <h1>Passo 04:</h1>
+    <h3>Adicione o arquivo desejado</h3>
+    <h4>git add nome.extensão</h4>
+    <h3>Se desejar subir todos os arquivos da pasta</h3>
+    <h4>git add .</h4>
+    <h1>Passo 05:</h1>
+    <h3>Adicione o comando da branch</h3>
+    <h4>git branch -M main</h4>
+    <h1>Passo 06:</h1>
+    <h3>Suba o arquivo</h3>
+    <h4>git push -u origin main</h4>
+    <h1>Em casos de erro ao passar o comando push</h1>
+    <h3>Nesse caso existem duas opções</h3>
+    <h3>Primeira opção</h3>
+    <h4>git pull origin main --allow-unrelated-histories</h4>
+    <h4>git push -u origin main</h4>
+    <h3>Segunda opção</h3>
+    <h4>git push -u origin main --force</h4>
+    <h4>Obs: esse comando pode subistituir todos os arquivos do repositório. Se faz necessário 
+        verificar seu repositório para não ocorrer perda.
+    </h4>
+</body>
+</html>
